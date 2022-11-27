@@ -20,6 +20,3 @@ $(document).on('click', '.below button', function(){
     }, 300);
   });
 
-var btnbelow = document.getElementsByClassName(".login-btn")
-
-console.log(btnbelow)
