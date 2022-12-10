@@ -1,0 +1,88 @@
+.ht {
+    display: grid;
+    margin: 10px;
+    position: absolute;
+    top: 170px;
+    left: 25px;
+    z-index: 100;
+}
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.pushable {
+    background: hsl(340deg 100% 32%);
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin: 20px;
+
+}
+
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: rgb(240, 24, 0);
+    color: white;
+    transform: translateY(-6px);
+    height: 40px;
+}
+
+
+
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+#btn-black {
+    background: rgb(27, 217, 17);
+}
+
+#btn-black .front {
+    background: rgb(122, 232, 150);
+}
+
+#btn-blue {
+    background: rgb(24, 48, 128);
+}
+
+#btn-blue .front {
+    background: rgb(65, 81, 141);
+}
+
+#btn-yellow {
+    background: rgb(138, 120, 5);
+}
+
+#btn-yellow .front {
+    background: rgb(221, 200, 93);
+}
+
+
+@media screen and (max-width:426px) {
+
+    .ht{
+        display: flex;
+        top: 0px;
+    }
+
+    .front{
+        height: 24px;
+        width: 48px;
+        padding: 2px;
+    }
+
+
+
+
+
+
+
+
+}

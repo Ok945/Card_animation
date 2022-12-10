@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons_style.css">
+    <link rel="stylesheet" href="nav_style.css">
     <style>
-        
-
-        
-
         /*
         .card__front::before {
             content: '';
@@ -66,69 +64,6 @@
 
 
 
-
-        .ht {
-            position: absolute;
-            top: 100px;
-            left: 0;
-            z-index: 100;
-        }
-
-        .pushable:focus:not(:focus-visible) {
-            outline: none;
-        }
-
-        .pushable {
-            background: hsl(340deg 100% 32%);
-            border: none;
-            border-radius: 12px;
-            padding: 0;
-            cursor: pointer;
-            outline-offset: 4px;
-
-        }
-
-        .front {
-            display: block;
-            padding: 12px 42px;
-            border-radius: 12px;
-            font-size: 1.25rem;
-            background: rgb(240, 24, 0);
-            color: white;
-            transform: translateY(-6px);
-            height: 40px;
-        }
-
-
-
-
-        .pushable:active .front {
-            transform: translateY(-2px);
-        }
-
-        #btn-black {
-            background: rgb(28, 28, 28);
-        }
-
-        #btn-black .front {
-            background: rgb(65, 65, 65);
-        }
-
-        #btn-blue {
-            background: rgb(24, 48, 128);
-        }
-
-        #btn-blue .front {
-            background: rgb(65, 81, 141);
-        }
-
-        #btn-yellow {
-            background: rgb(138, 120, 5);
-        }
-
-        #btn-yellow .front {
-            background: rgb(221, 200, 93);
-        }
     </style>
 </head>
 
@@ -136,52 +71,140 @@
     <!-- <div class="background-image"></div> -->
 
 
-    <section class="ht">
+
+    
+
+    
 
 
 
-        <button class="pushable" id="btn-red" onclick="myFunction()">
-            <span class="front">
-                <i class="fa fa-home"></i>
-            </span>
-        </button>
-        <button class="pushable" id="btn-black" onclick="myFunction1()">
-            <span class="front">
-                <i class="fa fa-cog"></i>
-            </span>
-        </button>
-        <button class="pushable" id="btn-blue" onclick="myFunction2()">
-            <span class="front">
-                <i class="fa fa-home"></i>
-            </span>
-        </button>
-        <button class="pushable" id="btn-yellow" onclick="myFunction3()">
-            <span class="front">
-                <i class="fa fa-home"></i>
-            </span>
-        </button>
 
 
-    </section>
-    <div class="card">
-        <div class="card__content">
 
-            <div class="card__second" id="second__card">
-                <h3 class="card__title">Second</h3>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page_container">
+
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                JoGeek
+              </div>
             </div>
-
-            <div class="card__first" id="first__card">
-                <h3 class="card__title">First</h3>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
             </div>
             
-            <div class="card__third" id="third__card">
-                <h3 class="card__title">Third</h3>
+            <div class="nav-links">
+              <a href="//github.io/jo_geek" target="_blank">Github</a>
+              <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+              <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+              <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+              <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
             </div>
+          </div>
 
-            <div class="card__fourth" id="fourth__card">
-                <h3 class="card__title">Fourth</h3>
+        <section class="ht">
+
+
+
+            <button class="pushable" id="btn-red" onclick="myFunction()">
+                <span class="front">
+                    <i class="fa fa-home"></i>
+                </span>
+            </button>
+            <button class="pushable" id="btn-black" onclick="myFunction1()">
+                <span class="front">
+                    <i class="fa fa-cog"></i>
+                </span>
+            </button>
+            <button class="pushable" id="btn-blue" onclick="myFunction2()">
+                <span class="front">
+                    <i class="fa fa-home"></i>
+                </span>
+            </button>
+            <button class="pushable" id="btn-yellow" onclick="myFunction3()">
+                <span class="front">
+                    <i class="fa fa-home"></i>
+                </span>
+            </button>
+
+
+        </section>
+        <div class="card">
+            <div class="card__content">
+
+                <div class="card__second animation_end_up" id="second__card">
+                    <h1 class="card__title">TABLE TENNIS</h1>
+                    <h4>VENUE -  COEP COURT</h4>
+                    <H4>DATE - 11 <sup>th</sup> & 12 <sup>th</sup></H4>
+                    <h4>ENTRY FEES -</h4>
+                    <span>1. FOR BOYS: ₹ 1000-/</span>
+                    <span>2. FOR GIRLS: ₹ 600-/</span>
+                    <span>3. FOR DOUBLES MIX : ₹ 250-/</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="gooey">
+                                <!-- in="sourceGraphic" -->
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                            </filter>
+                        </defs>
+                    </svg>
+
+
+                    <button id="gooey-button">
+                        F*** Awesome
+                        <span class="bubbles">
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </span>
+                    </button>
+
+                    
+                </div>
+
+                <div class="card__first" id="first__card">
+                    <h3 class="card__title">=Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam
+                        adipisci, tenetur ducimus sequi mollitia non eligendi odit assumenda quam, expedita nihil alias
+                        consectetur pariatur obcaecati sed dignissimos architecto aspernatur.
+
+                    </h3>
+                </div>
+
+                <div class="card__third" id="third__card">
+                    <h3 class="card__title">Third</h3>
+                </div>
+
+                <div class="card__fourth" id="fourth__card">
+                    <h3 class="card__title">Fourth</h3>
+                </div>
+
             </div>
-
         </div>
     </div>
 

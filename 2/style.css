@@ -19,14 +19,17 @@
 }
 
 body {
-    height: 100vh;
+    height: 140vh;
     display: grid;
     place-items: center;
     font-family: 'Oswald', sans-serif;
+    /* background: url('img4.jpeg'); */
 
 }
 
 .card {
+    position: relative;
+    top: 100px;
     width: 400px;
 
 }
@@ -53,13 +56,20 @@ body {
     transform-style: preserve-3d;
     display: grid;
     align-content: center;
+    border: 2px solid rgb(24, 23, 23);
 }
 
 
 
 
 
+
+
+
+
+
 .card__first {
+    
     background: rgb(197, 41, 41);
     transform: rotateZ(-90deg) translate3d(-100px, 100px, 0) scale(0.7);
     /* transition: 0.5s cubic-bezier(1,0,.92,1.68); */
@@ -72,10 +82,12 @@ body {
 }
 
 .card__second {
-    background: #333;
+    background: rgb(112, 233, 148);
     transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     z-index: 1;
     /* transition-delay: 0.4s; */
+
+    transform: rotateZ(-90deg) translate3d(-100px, 100px, 0) scale(0.7);
 }
 
 
