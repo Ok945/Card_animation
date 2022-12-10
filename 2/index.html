@@ -9,108 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttons_style.css">
+    <link rel="stylesheet" href="nav_style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
-
-        :root {
-            --level-one: translateZ(3rem);
-            --level-two: translateZ(6rem);
-            --level-three: translateZ(9rem);
-
-            --fw-normal: 400;
-            --fw-bold: 700;
-
-            --clr: #b7c9e5;
-        }
-
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-        }
-
-        body {
-            height: 100vh;
-            display: grid;
-            place-items: center;
-            font-family: 'Oswald', sans-serif;
-        }
-
-        .card {
-            width: 400px;
-
-        }
-
-        .card__content {
-            text-align: center;
-            position: relative;
-            padding: 15em 5em;
-            transform-style: preserve-3d;
-        }
-
-
-        .card__second,
-        .card__first,
-        .card__third {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 5em 3em;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-            display: grid;
-            align-content: center;
-        }
-
-        .card__first {
-            background: rgb(197, 41, 41);
-            transform: rotateZ(-90deg) translate3d(-100px, 100px, 0) scale(0.7);
-            transition: 1s cubic-bezier(0, 0.41, 0.25, 1) all;
-            /* transition-delay: 0.4s; */
-            z-index: 0;
-        }
-
-        .card__second {
-            background: #333;
-            transition: 1s cubic-bezier(0, 0.41, 0.25, 1) all;
-            z-index: 1;
-            /* transition-delay: 0.4s; */
-        }
-
-        .card__third {
-            background: rgb(41, 85, 197);
-            transform: rotateZ(-90deg) translate3d(-100px, 100px, 0) scale(0.7);
-            transition: 1s cubic-bezier(0, 0.41, 0.25, 1) all;
-            /* transition-delay: 0.4s; */
-            z-index: 0;
-        }
-
-
-        .animation_start_up {
-
-            transform: rotateZ(-90deg) translate3d(200px, -200px, 0) scale(0.7);
-            z-index: 0;
-
-        }
-
-        .animation_start_below {
-            transform: rotateZ(-7deg) translateY(150px) scale(0.78);
-            z-index: 1;
-        }
-
-        .animation_end_below {
-            transform: rotateZ(-90deg) translate3d(-100px, 100px, 0) scale(0.7);
-            z-index: 0;
-        }
-
-        .animation_end_up {
-            transform: rotateZ(0deg);
-            z-index: 1;
-        }
-
         /*
         .card__front::before {
             content: '';
@@ -162,200 +64,151 @@
 
 
 
-
-        .ht {
-            position: absolute;
-            top: 100px;
-            left: 0;
-            z-index: 100;
-        }
-
-        .pushable:focus:not(:focus-visible) {
-            outline: none;
-        }
-
-        .pushable {
-            background: hsl(340deg 100% 32%);
-            border: none;
-            border-radius: 12px;
-            padding: 0;
-            cursor: pointer;
-            outline-offset: 4px;
-
-        }
-
-        .front {
-            display: block;
-            padding: 12px 42px;
-            border-radius: 12px;
-            font-size: 1.25rem;
-            background: rgb(240, 24, 0);
-            color: white;
-            transform: translateY(-6px);
-            height: 40px;
-        }
-
-
-
-
-        .pushable:active .front {
-            transform: translateY(-2px);
-        }
-
-        #btn-black {
-            background: rgb(28, 28, 28);
-        }
-
-        #btn-black .front {
-            background: rgb(65, 65, 65);
-        }
-
-        #btn-blue {
-            background: rgb(24, 48, 128);
-        }
-
-        #btn-blue .front {
-            background: rgb(65, 81, 141);
-        }
-
-        #btn-yellow {
-            background: rgb(138, 120, 5);
-        }
-
-        #btn-yellow .front {
-            background: rgb(221, 200, 93);
-        }
     </style>
 </head>
 
 <body>
-
-
-    <section class="ht">
+    <!-- <div class="background-image"></div> -->
 
 
 
-        <button class="pushable" id="btn-red" onclick="myFunction()">
-            <span class="front">
-                <i class="fa fa-home"></i>
-            </span>
-        </button>
-        <button class="pushable" id="btn-black" onclick="myFunction1()">
-            <span class="front">
-                <i class="fa fa-cog"></i>
-            </span>
-        </button>
-        <button class="pushable" id="btn-blue" onclick="myFunction2()">
-            <span class="front">
-                <i class="fa fa-home"></i>
-            </span>
-        </button>
-        <button class="pushable" id="btn-yellow" onclick="myFunction3()">
-            <span class="front">
-                <i class="fa fa-home"></i>
-            </span>
-        </button>
+    
+
+    
 
 
-    </section>
-    <div class="card">
-        <div class="card__content">
 
-            <div class="card__first" id="first__card">
-                <h3 class="card__title">First</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page_container">
+
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                JoGeek
+              </div>
             </div>
-
-            <div class="card__second" id="second__card">
-                <h3 class="card__title">Second</h3>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
             </div>
-
-
-            <div class="card__third" id="third__card">
-                <h3 class="card__title">Third</h3>
+            
+            <div class="nav-links">
+              <a href="//github.io/jo_geek" target="_blank">Github</a>
+              <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+              <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+              <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+              <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
             </div>
+          </div>
 
-            <div class="card__fourth" id="fourth__card">
-                <h3 class="card__title">Fourth</h3>
+        <section class="ht">
+
+
+
+            <button class="pushable" id="btn-red" onclick="myFunction()">
+                <span class="front">
+                    <i class="fa fa-home"></i>
+                </span>
+            </button>
+            <button class="pushable" id="btn-black" onclick="myFunction1()">
+                <span class="front">
+                    <i class="fa fa-cog"></i>
+                </span>
+            </button>
+            <button class="pushable" id="btn-blue" onclick="myFunction2()">
+                <span class="front">
+                    <i class="fa fa-home"></i>
+                </span>
+            </button>
+            <button class="pushable" id="btn-yellow" onclick="myFunction3()">
+                <span class="front">
+                    <i class="fa fa-home"></i>
+                </span>
+            </button>
+
+
+        </section>
+        <div class="card">
+            <div class="card__content">
+
+                <div class="card__second animation_end_up" id="second__card">
+                    <h1 class="card__title">TABLE TENNIS</h1>
+                    <h4>VENUE -  COEP COURT</h4>
+                    <H4>DATE - 11 <sup>th</sup> & 12 <sup>th</sup></H4>
+                    <h4>ENTRY FEES -</h4>
+                    <span>1. FOR BOYS: ₹ 1000-/</span>
+                    <span>2. FOR GIRLS: ₹ 600-/</span>
+                    <span>3. FOR DOUBLES MIX : ₹ 250-/</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="gooey">
+                                <!-- in="sourceGraphic" -->
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                            </filter>
+                        </defs>
+                    </svg>
+
+
+                    <button id="gooey-button">
+                        F*** Awesome
+                        <span class="bubbles">
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                            <span class="bubble"></span>
+                        </span>
+                    </button>
+
+                    
+                </div>
+
+                <div class="card__first" id="first__card">
+                    <h3 class="card__title">=Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam
+                        adipisci, tenetur ducimus sequi mollitia non eligendi odit assumenda quam, expedita nihil alias
+                        consectetur pariatur obcaecati sed dignissimos architecto aspernatur.
+
+                    </h3>
+                </div>
+
+                <div class="card__third" id="third__card">
+                    <h3 class="card__title">Third</h3>
+                </div>
+
+                <div class="card__fourth" id="fourth__card">
+                    <h3 class="card__title">Fourth</h3>
+                </div>
+
             </div>
-
         </div>
     </div>
 
-    <script>
-        var firstCard = document.getElementById("first__card");
-        var secondCard = document.getElementById("second__card");
-        var thirdCard = document.getElementById("third__card");
-        var fourthCard = document.getElementById("fouth__card");
-
-        function myFunction() {
-            setTimeout(function () {
-                firstCard.classList.remove("animation_end_below");
-                secondCard.classList.remove("animation_end_up");
-                thirdCard.classList.remove("animation_end_up");
-                firstCard.classList.add("animation_start_below")
-                secondCard.classList.add("animation_start_up");
-                setTimeout(function () {
-                    secondCard.classList.remove("animation_start_up")
-                    firstCard.classList.add("animation_end_up")
-                    firstCard.classList.remove("animation_start_below")
-                    secondCard.classList.add("animation_end_below")
-
-                }, 900);
-
-
-            }, 30);
-        }
-
-
-
-
-        function myFunction1() {
-            setTimeout(function () {
-                secondCard.classList.remove("animation_end_below");
-                firstCard.classList.remove("animation_end_up");
-                firstCard.classList.add("animation_start_up");
-                secondCard.classList.add("animation_start_below");
-                thirdCard.classList.remove("animation_end_up");
-                setTimeout(function () {
-                    firstCard.classList.remove("animation_start_up")
-                    firstCard.classList.add("animation_end_below")
-                    secondCard.classList.add("animation_end_up")
-                    secondCard.classList.remove("animation_start_below")
-
-                }, 900);
-            }, 30);
-        }
-
-        function myFunction2() {
-            setTimeout(() => {
-                // secondCard.classList.remove("animation_end_below");
-                firstCard.classList.remove("animation_end_up");
-                firstCard.classList.remove("animation_end_below");
-                secondCard.classList.remove("animation_end_up");
-                secondCard.classList.add("animation_start_up");
-                thirdCard.classList.add("animation_start_below");
-                setTimeout(() => {
-                    secondCard.classList.remove("animation_start_up");
-                    thirdCard.classList.remove("animation_start_below");
-                    secondCard.classList.add("animation_end_below");
-                    thirdCard.classList.add("animation_end_up");
-                }, 900);
-            }, 30);
-        }
-
-
-
-        function myFunction3() {
-            setTimeout(() => {
-                firstCard.classList.remove("animation_end_below");
-                firstCard.classList.remove("animation_end_up");
-                secondCard.classList.remove("animation_end_up");
-                thirdCard.classList.remove("animation_end_up");
-                secondCard.classList.add("animation_start_up");
-
-            })
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
