@@ -89,11 +89,12 @@ body.toggle .grid * {
   cursor: pointer;
   /* position: relative; */
   transition: box-shadow 0.25s;
-  height: 550px;
-  width: 500px;
+  height: 450px;
+  width: 650px;
   transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   position: absolute;
   text-align: center;
+  opacity: 0.0;
 
 
 }
@@ -109,27 +110,31 @@ body.toggle .grid * {
   cursor: pointer;
   /* position: relative; */
   transition: box-shadow 0.25s;
-  height: 550px;
-  width: 500px;
+  height: 450px;
+  width: 650px;
   transition: 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   position: absolute;
   text-align: center;
   overflow: hidden;
-  transform: rotateZ(-90deg) scale(0.7) translate3d(-100px, 200px, 0);
-  overflow-y: scroll;
+  transform: rotateZ(-90deg) scale(0.5,1) translate3d(-100px, 150px, 0);
+ 
 
 }
 
 .second {
   position: absolute;
-  height: 860px;
+  height: 1000px;
 
 }
+.second .structure_head{text-align: center;}
+.second .structure_fees{text-align: center;}
+
+.second p{text-align: left;}
 
 
 .third {
-  /* transform: rotateZ(-90deg) scale(0.7) translate3d(-100px, 200px, 0); */
-  height: 860px;
+  
+  height: 680px;
 }
 
 .third .rules_head {
@@ -151,12 +156,12 @@ body.toggle .grid * {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(transparent, #30ff00);
-  border-radius: 6px;
+  border-radius: 1000px;
 }
 
 
@@ -172,7 +177,7 @@ body.toggle .grid * {
   margin: 12px 0 4px 0;
   font-family: inherit;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 2;
   color: var(--card-label-color);
 }
@@ -181,7 +186,7 @@ body.toggle .grid * {
   z-index: 2;
   position: relative;
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--text-color);
 }
@@ -500,10 +505,3 @@ body {
   overflow: hidden;
 }
 
-body:before {
-  content: "";
-  position: absolute;
-  inset: 0 -60% 65% -60%;
-  background-image: radial-gradient(ellipse at top, #10B981 0%, #18181B 50%);
-  opacity: var(--blur-opacity);
-}
